@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Dog API Assignment</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Give Me Some Dog Pics!</h1>
+    <form class="number-dogs">
+        <label for="number">How many pictures do you want? (1-50)</label>
+        <input type="number" id="numberPictures"  min="1" max="50" value="3" required>
+        <input type="submit" value="Get my dog pic(s)!">
+    </form> 
+    <section class="api-images">
+    </section>
+    <form class="breed-form">
+        <label for="search">What breed of dog do you want?</label>
+        <input type="text" id="breedDog" required>
+        <input type="submit" class="breed-submit" value="Get my breed pic(s)!">
+    </form>
+    <section class="breed-images">
+    </section>
+<script src="index.js"></script>
+</body>
+</html>
